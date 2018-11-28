@@ -1,13 +1,13 @@
 // window = グローバル変数
 window.omikujiData = {
     "fortuneList": [
-        "./resources/img/omikuji/daikichi.png",
-        "./resources/img/omikuji/kichi.png",
-        "./resources/img/omikuji/chuukichi.png",
-        "./resources/img/omikuji/shoukichi.png",
-        "./resources/img/omikuji/suekichi.png",
-        "./resources/img/omikuji/kyou.png",
-        "./resources/img/omikuji/daikyou.png",
+        "./resources/img/fortune/daikichi.png",
+        "./resources/img/fortune/kichi.png",
+        "./resources/img/fortune/chuukichi.png",
+        "./resources/img/fortune/shoukichi.png",
+        "./resources/img/fortune/suekichi.png",
+        "./resources/img/fortune/kyou.png",
+        "./resources/img/fortune/daikyou.png",
     ],
     "colorList": [
         "勿忘草色", "真珠色", "浅葱色", "まつざきしげるいろ",
