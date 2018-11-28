@@ -4,6 +4,7 @@
 function execOmikuji() {
     // ADV: データっぽいものはファイルにまとめましょう
     // グローバル変数のおみくじデータを受け取る
+    // ./resources/json/omikujiData.js
     const omikujiData = window.omikujiData;
 
     // 本当ににやりたかったの以下の数行
