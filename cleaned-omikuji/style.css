@@ -1,57 +1,45 @@
 body {
-  background: #efefef;
+    background: #efefef;
 }
 
-#btn {
-  margin: 0px auto 0;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: #1abc9c;
-  line-height: 50px;
-  text-align: right;
-  color: #fff;
-  font-size: 42px;
-  font-weight: bold;
-  cursor: pointer;
-  opacity: 0.9;
-  box-shadow: 0 10px 0 #1e7145;
-  border: 3px solid #1e7145;
-  user-select: none;
-  padding-top: 0%;
+#omikuji {
+    text-align: center;
 }
 
-#btn:hover {
-  opacity: 1;
+.exec-omikuji {
+    display: block;
+    cursor: pointer;
+    margin: 0 auto 1rem;
+    width: 8rem; height: 8rem;
+    border-radius: 50%;
+    background: #1ABC9C;
+    opacity: 0.9;
+    border: 0.2rem solid #1E7145;
+    box-shadow: 0 0.3rem #1E7145;
 }
 
-#btn.pushed {
-  margin-top: 0px;
-  box-shadow: 0 4px 0 #d1483e;
+.exec-omikuji:hover {
+    opacity: 1.0;
 }
 
-.omikuji {
-  text-align: center;
+.result {
+    display: none;
 }
 
-.omikujikekka {
-  text-align: center;
-  width: 8%;
-  height: 8%;
+.result #fortune {
+    height: 10rem;
+    width: auto;
 }
 
-.kekka {
-  text-align: center;
+/* 表示切り替え */
+.resolved .result {
+    display: block;
 }
 
-#color {
-  text-align: center;
-}
-
-#spot {
-  text-align: center;
-}
-
-#hitokoto {
-  text-align: center;
+/* ちなみに以下のコードで一度だけのおみくじにできる */
+.resolved .exec-omikuji {
+    pointer-events: none;
+    background-color: #FF5555;
+    border: 0.2rem solid #AA3333;
+    box-shadow: 0 0.3rem #AA3333;
 }

@@ -1,36 +1,38 @@
 <!DOCTYPE html>
+<html lang='ja'>
 
-<html lang="ja">
-  <head>
-    <meta charset="utf-8" />
+<head>
+    <meta charset='utf-8' />
     <title>おみくじ</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="omikuji"><img src="dev_img/omikuji.png" /></div>
-    <div class="omikujikekka"></div>
 
-    <div id="output">
-      <div class="kekka"><p id="omikekka"></p></div>
-      <p id="color"></p>
-      <p id="spot"></p>
-      <p id="hitokoto"></p>
-    </div>
+    <link rel='stylesheet' href='./style.css' />
+</head>
+<body>
+    <section id='omikuji'>
+        <!-- ADV: ファイルの置き方が汚かったので整理しました -->
+        <img src='./resources/img/logo.png' />
 
-    <div id="btn" onclick="click"></div>
+        <!-- ADV: できるだけ英語使おう（固有名詞除く） -->
+        <!-- ADV: 要素は整理しよう -->
+        <div class='result'>
+            <img id='fortune' />
+            <p>ラッキーカラー: <span id='color'></span></p>
+            <p>ラッキースポット: <span id='location'></span></p>
+            <p>今日の一言: <span id='message'></span></p>
+        </div>
 
-    <a
-      href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-      class="twitter-share-button"
-      data-show-count="false"
-      >Tweet</a
-    >
-    <script
-      src="https://platform.twitter.com/widgets.js"
-      charset="utf-8"
-    ></script>
-    <p class="orei">Thank you for everything</p>
-    <div id="overlay"></div>
-    <script type="text/javascript" src="main.js"></script>
-  </body>
+        <!-- ADV: `onClick` あるなら`addEventListener` いらない -->
+        <button class='exec-omikuji' onclick='execOmikuji()'></button>
+        <a  href='https://twitter.com/share?ref_src=twsrc%5Etfw'
+            class='twitter-share-button'
+            data-show-count='false'>Tweet</a>
+
+        <p class='thanks'>Thank you for everything</p>
+    </section>
+
+    <script src='https://platform.twitter.com/widgets.js'></script>
+    <script src='./resources/json/omikujiData.js'></script>
+    <script src='./main.js'></script>
+</body>
+
 </html>
